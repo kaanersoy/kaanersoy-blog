@@ -32,7 +32,6 @@ yarn dev
 
 ## ✔ TODO LIST
 
-> check the todos if you fix it.
 - [ ] TODOs goes there...
 ## 🖊Authors:
 
