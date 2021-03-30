@@ -36,4 +36,4 @@ yarn dev
 - [ ] TODOs goes there...
 ## 🖊Authors:
 
-- [github@kaanersoy](https://github.com/kaanersoy)
+  [github@kaanersoy](https://github.com/kaanersoy)
