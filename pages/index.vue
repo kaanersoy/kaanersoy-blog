@@ -1,9 +1,7 @@
 <template>
   <transition name="home" mode="out-in">
     <div class="container">
-      <ul>
-        <li v-for="b in blogTitles">{{ b }}</li>
-      </ul>
+      <h1>Home Page</h1>
     </div>
   </transition>
 </template>
