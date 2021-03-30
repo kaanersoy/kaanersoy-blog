@@ -1,4 +1,7 @@
-
+---
+title: Netlify nedir? Nasıl kullanılır?
+description: Size yakın süre önce karşılaştığım ve mükemmel ayrıcalıklar kazandıracak bir servisi tanıtmak istiyorum.
+---
 # Netlify nedir? Nasıl kullanılır?
 
 Öncelikle merhaba, size yakın süre önce karşılaştığım ve mükemmel ayrıcalıklar kazandıracak bir servisi tanıtmak istiyorum.
