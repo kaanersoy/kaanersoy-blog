@@ -1,20 +1,39 @@
-# kaan-blog
+# Kaan Ersoy Personal Blog
 
-## Build Setup
+Description goes there...
+
+## 💻 Techs
+
+- Vuex
+- Nuxt
+- Nuxt Content API
+- Next Transition API
+
+## 📦 Installation
+
+#### 📰 Clone the project
 
 ```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+git clone https://github.com/kaanersoy/kaanersoy-blog.git
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+#### 🔻 Install the depedencies
+
+```bash
+yarn install
+```
+
+#### 🏃‍♂️ Start the project
+
+```bash
+# for dev
+yarn dev
+```
+
+## ✔ TODO LIST
+
+> check the todos if you fix it.
+- [ ] TODOs goes there...
+## 🖊Authors:
+
+- [github@kaanersoy](https://github.com/kaanersoy)
