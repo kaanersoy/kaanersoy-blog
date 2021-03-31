@@ -34,8 +34,6 @@ export default {
     '@nuxt/content'
   ],
 
-  target: 'static',
-
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
   ],
