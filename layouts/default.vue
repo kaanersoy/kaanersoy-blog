@@ -1,18 +1,28 @@
 <template>
   <div>
     <header>
-      <h3>Header</h3>
-      <NuxtLink to="/">Home page</NuxtLink>
-      <NuxtLink to="/blog">Blog</NuxtLink>
+      <nav>
+        <NuxtLink to="/">Ev</NuxtLink>
+        <span>|</span>
+        <NuxtLink to="/blog">Yazılar</NuxtLink>
+      </nav>
     </header>
-    <Nuxt />
+    <div class="container">
+      <Nuxt />
+    </div>
     <footer>
       <h3>footer</h3>
     </footer>
   </div>
 </template>
 
-<style>
+<style lang="postcss">
+.container {
+  @apply mx-auto px-5 xl:max-w-5xl pt-12;
+}
+h1 {
+  @apply text-4xl font-bold my-4;
+}
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -24,40 +34,17 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+header {
+  @apply py-4 px-6 bg-opacity-30 fixed -inset-x-0;
+  nav {
+    @apply text-right;
+    a,
+    span {
+      @apply text-2xl font-bold;
+    }
+    span {
+      @apply mx-4;
+    }
+  }
 }
 </style>
