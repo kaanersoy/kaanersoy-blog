@@ -72,10 +72,10 @@ html {
 nav {
   @apply fixed flex items-center justify-center w-full min-h-screen  z-20;
   background: rgba(230, 230, 230, 0.5);
-  -o-backdrop-filter: blur(30px);
-  -moz-backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
+  -o-backdrop-filter: blur(22px);
+  -moz-backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  backdrop-filter: blur(22px);
   ul {
     position: absolute;
     li {
