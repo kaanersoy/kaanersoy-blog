@@ -1,13 +1,13 @@
 # Kaan Ersoy Personal Blog
 
-Description goes there...
+  Description goes there...
 
 ## 💻 Techs
 
-- Vuex
-- Nuxt
-- Nuxt Content API
-- Next Transition API
+  - Vuex
+  - Nuxt
+  - Nuxt Content API
+  - Next Transition API
 
 ## 📦 Installation
 
@@ -32,7 +32,7 @@ yarn dev
 
 ## ✔ TODO LIST
 
-- [ ] Fix the gist code embed problem in md files.
+  - [ ] Fix the gist code embed problem in md files.
 ## 🖊Authors:
 
   [github@kaanersoy](https://github.com/kaanersoy)
