@@ -32,7 +32,7 @@ yarn dev
 
 ## ✔ TODO LIST
 
-- [ ] TODOs goes there...
+- [ ] Fix the gist code embed problem in md files.
 ## 🖊Authors:
 
   [github@kaanersoy](https://github.com/kaanersoy)
