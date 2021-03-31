@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
+    "@nuxtjs/vercel-builder": "^0.21.2",
     "core-js": "^3.9.1",
     "node-sass": "^5.0.0",
     "nuxt": "^2.15.3",
