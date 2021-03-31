@@ -11,28 +11,45 @@
         doloribus eos cupiditate? Cupiditate dolore facere omnis cum, dolores
         voluptatibus consequatur!
       </p>
+      <div class="icons">
+        <a href="">
+          <img src="../assets/icons/github.svg" alt="Github" />
+        </a>
+        <a href="">
+          <img src="../assets/icons/linkedin.svg" alt="LinkedIn" />
+        </a>
+        <a href="">
+          <img src="../assets/icons/twitter.svg" alt="Twitter" />
+        </a>
+        <a href="">
+          <img src="../assets/icons/medium.svg" alt="Medium" />
+        </a>
+      </div>
     </div>
     <hr />
     <div class="body">
       <div class="project">
-        <h4>Projects</h4>
-        <div class="project-box">
-          <div class="head">
-            <h3>Project name</h3>
-          </div>
-          <div class="body">
-            <img src="" alt="" />
-            <p>Description</p>
-          </div>
-        </div>
+        <h4>PROJECTS</h4>
+        <product v-for="(pr, i) in products" :key="i" :product="pr" />
       </div>
     </div>
   </main>
 </template>
 
 <script>
+import product from '../components/product'
 export default {
+  name: 'Index',
+  components: {
+    product
+  },
+  async asyncData({ $content }) {
+    const products = await $content('products').fetch()
+    return { products }
+  }
 }
+
+
 </script>
 
 <style lang="postcss">
@@ -47,16 +64,22 @@ main.main-page {
   }
   & > .head {
     h1 {
-      @apply text-center;
+      @apply text-center text-4xl;
     }
     p {
       @apply text-lg;
+    }
+    .icons {
+      @apply flex justify-center my-6 space-x-4;
+      a {
+        @apply w-10 rounded-full;
+      }
     }
   }
   .body {
     .project {
       & > h4 {
-        @apply font-bold text-2xl my-6;
+        @apply font-bold text-3xl my-4 inline-block pb-4 border-b-2 border-gray-200;
       }
     }
   }
