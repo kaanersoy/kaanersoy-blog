@@ -70,22 +70,24 @@ html {
   box-sizing: border-box;
 }
 nav {
-  @apply fixed flex items-center justify-center w-full min-h-screen  z-20;
+  @apply fixed flex items-center justify-end top-0 right-0 w-full xl:w-1/2 min-h-screen z-20 pr-5 xl:pr-10;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
   background: rgba(230, 230, 230, 0.5);
-  -o-backdrop-filter: blur(22px);
-  -moz-backdrop-filter: blur(22px);
-  -webkit-backdrop-filter: blur(22px);
-  backdrop-filter: blur(22px);
+  -o-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   ul {
     position: absolute;
     li {
       @apply font-black text-5xl text-center;
       a {
+        @apply text-gray-100 text-3xl  sm:text-4xl xl:text-5xl;
+
         background-color: transparent;
-        color: transparent;
         -webkit-text-stroke-width: 1.5px;
         -webkit-text-stroke-color: black;
-        -webkit-text-stroke: 1.5px black;
+        /* -webkit-text-stroke: 1.5px black; */
       }
       & + li {
         @apply mt-4;
@@ -103,11 +105,10 @@ header {
 .menu-enter-active,
 .menu-leave-active {
   transition: 500ms ease;
-  transform: translateX(0);
 }
 .menu-leave-to,
 .menu-enter {
-  transform: translateX(-100%);
+  clip-path: polygon(100% 0, 100% 0, 100% 100%);
 }
 /* .menu-enter-to,
 .menu-enter {
