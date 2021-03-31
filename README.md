@@ -1,6 +1,7 @@
 # Kaan Ersoy Personal Blog
 
-  Description goes there...
+Personal blog page and portfolio page maded with Nuxt, Vue and Nuxt-content package.
+Was a test for SSR and Vue Transition API.
 
 ## 💻 Techs
 
