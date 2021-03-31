@@ -1,5 +1,8 @@
 module.exports = {
-  purge: [],
+  purge: [
+    './components/**/*.vue',
+    './pages/**/*.vue'
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
@@ -7,5 +10,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
