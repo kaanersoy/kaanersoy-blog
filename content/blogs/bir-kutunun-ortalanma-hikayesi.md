@@ -113,16 +113,15 @@ Burası biraz karmaşık gelebilir fakat biraz açıklamaya başlayınca kafa a�
 CSS Flexbox yok iken(daha doğrusu major tarayıcılar tarafından desteklenmiyor iken) web geliştirici abilerimizin kaçtığı bu tür ***hacky ***yöntemler çoğu yerde karşımıza çıkıyor. Bunlar çoğu zaman zihin açıcı yöntemler oluyor🤯.
 
 Burada yaptığımız işlem öncelikle kapsayıcımıza position: relative; özelliği ekleyerek mavi kutumuzu kapsayıcımıza bağıl hale getirmek.
-
 Sonrasında ise yine height: 100vh; kullanarak kapsayıcımıza ekran yüksekliği kadar yükseklik kazandırdık.
 
 Mavi kutumuz top: 50%; left: 50%; değerlerini aldığında kapsayıcısının %50'si kadar soldan sağa ve yukarıdan aşağıya öteleniyor. Fakat bu bizim için bir sıkıntı doğuruyor bizim kutumuz kendi yüksekliği ve genişliği kadar sağa ve aşağıya taşıyor.
 
 Bunu da transform: translate(-50%, -50%); kullanarak nesnemizi kendisinin %50'si kadar yukarı ve sola ötelenmesini sağlıyoruz.
-> 2. kes Voila🎉!
+
+>  Bir daha 'voila🎉'!
 
 Biraz karmaşık fakat tam teşekkürlü her ekranda çalışmak için hizmetinizde bir mavi kutunuz olmuş oluyor.
-
 Biraz uzun bir yazı olduğunu fark etmem ile beraber aklımdaki tüm senaryoları sizinle paylaştığımı düşünüyorum. Umarım eğlenceli zaman geçirdiğiniz ve bir o kadar da bildiklerimi paylaşabildiğim bir yazı olmuştur.
 
 Okuduğunuz için teşekkür ediyorum. Geri bildirimlerinizi heyecanla bekliyorum.

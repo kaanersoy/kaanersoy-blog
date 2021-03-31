@@ -18,7 +18,7 @@ Havada kalmasını istemediğim için biraz örneklerle ilerlemek istiyorum.
 
 Bu örneğimizde içinde bir text ve button bulunan card component’imiz olsun. Card component’imize text prop’lardan geliyor ve bu durumda biz içerideki text’i button’a basılınca değiştirmek istiyoruz.
 
-<iframe src="https://gist.github.com/kaanersoy/837af707809fb2bfcb733f9d96f06c74.js" frameborder=0></iframe>
+<script src="https://gist.github.com/kaanersoy/bcaad12f3a0163a1ef8c6b3719137175.js"></script>
 
 Fakat burada bir sıkıntımız var ki: Prop olarak gelen bir değeri component içinde mutate etmek güzel bir pratik değil.
 > İnsanın kendini dürtüp efendim demesi gibi bir şey😅
@@ -27,17 +27,17 @@ Bunun için Vue bize $emit adında bir fonksiyon sağlıyor. Bunun ile custom bi
 
 Dışarıdan ise bu event’i dinleyebiliyoruz.
 
-<iframe src="https://medium.com/media/ac7fe822a857415b313a03466beda312" frameborder=0></iframe>
+<!-- <script src="https://gist.github.com/kaanersoy/bcaad12f3a0163a1ef8c6b3719137175.js"></script> -->
 
 Yukarıda kullanıldığı şekilde gördüğümüz gibi $emit iki tane parametre alıyor.
 
-* 1. Parametre: **oluşturduğumuz custom event**
+  - 1.Parametre: **oluşturduğumuz custom event**
 
-* 2. Parametre: **dışarıya taşıyacağımız herhangi bir data**
+  - 2.Parametre: **dışarıya taşıyacağımız herhangi bir data**
 
 Şimdi ebeveynimize gidip oluşturduğumuz custom-event’i dinleme vakti💃
 
-<iframe src="https://medium.com/media/9a457c1071bc542d290c3e9a5795b99e" frameborder=0></iframe>
+<!-- <script src="https://gist.github.com/kaanersoy/3d5970dead5906b3c3e65890384399b8.js"></script> -->
 
 Yorum satırlarında da anlattığım gibi, component’in içinden gelenchangeText eventini yakaladık ve bunu yakalamamızla catchValue fonksiyonu çalışsın dedik.
 
