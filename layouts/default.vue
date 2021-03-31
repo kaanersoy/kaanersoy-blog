@@ -77,6 +77,10 @@ nav {
   -moz-backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  -webkit-transition: 500ms ease;
+  -o-transition: 500ms ease;
+  -moz-transition: 500ms ease;
+  transition: 500ms ease;
   ul {
     position: absolute;
     li {
@@ -104,6 +108,9 @@ header {
 
 .menu-enter-active,
 .menu-leave-active {
+  -webkit-transition: 500ms ease;
+  -o-transition: 500ms ease;
+  -moz-transition: 500ms ease;
   transition: 500ms ease;
 }
 .menu-leave-to,
