@@ -1,10 +1,10 @@
 <template>
-  <div class="blog">
-    <div class="blog container">
-      <article>
+  <div class="blog-in">
+    <article>
+      <client-only>
         <nuxt-content :document="blog" />
-      </article>
-    </div>
+      </client-only>
+    </article>
   </div>
 </template>
 
@@ -18,31 +18,24 @@
 </script>
 
 <style lang="postcss">
-.blog {
+.blog-in {
   @apply mx-auto;
-}
-  h1 {
-    margin: 20px 0;
-    font-weight: bold;
-    font-size: 36px;
-  }
   code {
-    background-color: #101010;
-    color: #fff;
-    padding: 2px 10px;
-    font-size: inherit;
+    @apply bg-gray-100 border-2 border-gray-300 px-2 py-1 rounded;
   }
   img {
-    @apply px-2 py-5 w-full;
+    @apply my-8 px-5 m-auto;
   }
   p {
-    font-size: 18px;
-    margin: 10px 0;
+    @apply text-lg;
   }
   blockquote {
-    background: #e6e6e6;
-    padding: 10px;
-    margin-left: 10px;
-    font-style: italic;
+    @apply bg-gray-100 border px-2 py-1 rounded;
   }
+  ul {
+    @apply my-3 border-t-2 border-b-2 border-gray-200 py-3;
+    li {
+    }
+  }
+}
 </style>
