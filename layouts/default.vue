@@ -10,9 +10,9 @@
     <div class="container">
       <Nuxt />
     </div>
-    <footer>
+    <!-- <footer>
       <h3>footer</h3>
-    </footer>
+    </footer> -->
   </div>
 </template>
 
