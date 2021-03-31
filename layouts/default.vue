@@ -26,7 +26,7 @@
 <script>
 const menus = [
   { to: '/', text: 'Home'},
-  { to: '/blog', text: 'Yazilar'},
+  { to: '/blog', text: 'Blogs'},
 ]
 
 import hamburger from '../components/hamburger'
@@ -70,10 +70,23 @@ html {
   box-sizing: border-box;
 }
 nav {
-  @apply fixed flex items-center justify-center w-full min-h-screen bg-gray-500 z-20;
+  @apply fixed flex items-center justify-center w-full min-h-screen  z-20;
+  background: rgba(230, 230, 230, 0.5);
+  -o-backdrop-filter: blur(30px);
+  -moz-backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
   ul {
+    position: absolute;
     li {
-      @apply font-black text-5xl text-center text-gray-200;
+      @apply font-black text-5xl text-center;
+      a {
+        background-color: transparent;
+        color: #fff;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: black;
+        -webkit-text-stroke: 1.5px black;
+      }
       & + li {
         @apply mt-4;
       }
