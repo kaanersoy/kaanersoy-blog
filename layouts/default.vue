@@ -1,11 +1,18 @@
 <template>
   <div>
-    <header>
-      <nav>
-        <NuxtLink to="/">Ev</NuxtLink>
-        <span>|</span>
-        <NuxtLink to="/blog">Yazılar</NuxtLink>
+    <transition name="menu">
+      <nav v-if="isMenuOpened" mode="out-in">
+        <ul>
+          <li @click="toggleMenu" v-for="(m, i) in menus" :key="i">
+            <NuxtLink :to="m.to">{{ m.text }}</NuxtLink>
+          </li>
+        </ul>
       </nav>
+    </transition>
+    <header>
+      <div class="menu">
+        <hamburger @menuToggle="toggleMenu" />
+      </div>
     </header>
     <div class="container">
       <Nuxt />
@@ -15,6 +22,34 @@
     </footer> -->
   </div>
 </template>
+
+<script>
+const menus = [
+  { to: '/', text: 'Home'},
+  { to: '/blog', text: 'Yazilar'},
+]
+
+import hamburger from '../components/hamburger'
+
+export default {
+  name: 'DefaultLayout',
+  components: {
+    hamburger
+  },
+  data: function(){
+    return {
+      menus,
+      isMenuOpened: false,
+    }
+  },
+  methods: {
+    toggleMenu: function(){
+      this.isMenuOpened = !this.isMenuOpened
+    }
+  }
+}
+</script>
+
 
 <style lang="postcss">
 .container {
@@ -34,17 +69,35 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-header {
-  @apply py-4 px-6 bg-opacity-30 fixed -inset-x-0;
-  nav {
-    @apply text-right;
-    a,
-    span {
-      @apply text-2xl font-bold;
-    }
-    span {
-      @apply mx-4;
+nav {
+  @apply fixed flex items-center justify-center w-full min-h-screen bg-gray-500 z-20;
+  ul {
+    li {
+      @apply font-black text-5xl text-center text-gray-200;
+      & + li {
+        @apply mt-4;
+      }
     }
   }
 }
+header {
+  @apply py-4 px-6 fixed z-30 -inset-x-0 w-full;
+  .hamburger {
+    @apply block ml-auto;
+  }
+}
+
+.menu-enter-active,
+.menu-leave-active {
+  transition: 500ms ease;
+  transform: translateX(0);
+}
+.menu-leave-to,
+.menu-enter {
+  transform: translateX(-100%);
+}
+/* .menu-enter-to,
+.menu-enter {
+  transform: translateX(0);
+} */
 </style>
