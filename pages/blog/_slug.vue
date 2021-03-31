@@ -20,6 +20,9 @@
 <style lang="postcss">
 .blog-in {
   @apply mx-auto;
+  article {
+    @apply prose prose-lg max-w-none;
+  }
   code {
     @apply bg-gray-100 border-2 border-gray-300 px-2 py-1 rounded;
   }
