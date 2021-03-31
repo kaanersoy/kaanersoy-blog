@@ -19,5 +19,6 @@
     "@nuxtjs/tailwindcss": "^4.0.1",
     "eslint-plugin-vue": "^7.8.0",
     "postcss": "^8.2.8"
-  }
+  },
+  "license": "MIT"
 }
