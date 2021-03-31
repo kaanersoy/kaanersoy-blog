@@ -2,7 +2,9 @@
   <main class="blog">
     <h1>Blog page</h1>
     <ul>
-      <li v-for="(b, i) in blogTitles" :key="i">{{ b }}</li>
+      <li v-for="(b, i) in blogs" :key="i">
+        <NuxtLink :to="`/blog/${b.slug}`">{{ b.title }}</NuxtLink>
+      </li>
     </ul>
   </main>
 </template>
@@ -12,7 +14,7 @@ export default {
 name:'BlogPage',
 async asyncData({$content}){
     const blogs = await $content('blogs').fetch();
-    return {blogTitles: blogs.map(b => b.title)}
+    return { blogs }
   },
 }
 </script>
