@@ -82,7 +82,7 @@ nav {
       @apply font-black text-5xl text-center;
       a {
         background-color: transparent;
-        color: #fff;
+        color: transparent;
         -webkit-text-stroke-width: 1.5px;
         -webkit-text-stroke-color: black;
         -webkit-text-stroke: 1.5px black;
