@@ -11,7 +11,7 @@
     </transition>
     <header>
       <div class="menu">
-        <hamburger @menuToggle="toggleMenu" />
+        <hamburger :is-open="isMenuOpened" @menuToggle="toggleMenu" />
       </div>
     </header>
     <div class="container">

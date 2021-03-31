@@ -16,14 +16,14 @@ import './hamburgers.css'
 
 export default {
   name: 'Hamburger',
-  data: function(){
-    return{
-      isOpen: false,
+  props:{
+    isOpen: {
+      type: Boolean,
+      default: false
     }
   },
   methods:{
     emit: function(){
-      this.isOpen = !this.isOpen;
       this.$emit('menuToggle')
     }
   }
