@@ -29,7 +29,9 @@
     <hr />
     <div class="body">
       <div class="project">
-        <h4>PROJECTS</h4>
+        <div class="title">
+          <h4>PROJECTS</h4>
+        </div>
         <product v-for="(pr, i) in products" :key="i" :product="pr" />
       </div>
     </div>
@@ -81,8 +83,15 @@ main.main-page {
   }
   .body {
     .project {
-      & > h4 {
-        @apply font-bold text-3xl my-4 inline-block pb-4 border-b-2 border-gray-200;
+      .title{
+        @apply text-center;
+        h4 {
+          @apply font-bold  relative text-3xl my-4 inline-block pb-4 border-b-2 border-gray-700 text-gray-700;
+          &::after{
+            content:'';
+            @apply absolute left-1/2 -bottom-2 w-3 h-3 bg-gray-700 rounded-full; 
+          }
+        }
       }
     }
   }
