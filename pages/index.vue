@@ -53,6 +53,9 @@ export default {
 </script>
 
 <style lang="postcss">
+body{
+  font-family: 'Inter', sans-serif;
+}
 main.main-page {
   hr {
     @apply border border-gray-300 my-4;
