@@ -24,32 +24,31 @@
 </template>
 
 <script>
-const menus = [
-  { to: '/', text: 'Home'},
-  { to: '/blog', text: 'Blogs'},
-]
+import hamburger from '@/components/hamburger';
 
-import hamburger from '../components/hamburger'
+const menus = [
+  { to: '/', text: 'Home' },
+  { to: '/blog', text: 'Blogs' },
+];
 
 export default {
   name: 'DefaultLayout',
   components: {
-    hamburger
+    hamburger,
   },
-  data: function(){
+  data() {
     return {
       menus,
       isMenuOpened: false,
-    }
+    };
   },
   methods: {
-    toggleMenu: function(){
-      this.isMenuOpened = !this.isMenuOpened
-    }
-  }
-}
+    toggleMenu() {
+      this.isMenuOpened = !this.isMenuOpened;
+    },
+  },
+};
 </script>
-
 
 <style lang="postcss">
 .container {
@@ -59,8 +58,8 @@ h1 {
   @apply text-4xl font-bold my-4;
 }
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -70,8 +69,7 @@ html {
   box-sizing: border-box;
 }
 nav {
-  @apply fixed flex items-center justify-end top-0 right-0 w-full xl:w-1/2 min-h-screen z-20 pr-5 xl:pr-10;
-  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  @apply fixed flex items-center justify-center top-0 right-0 w-full xl:w-80 min-h-screen z-20;
   background: rgba(230, 230, 230, 0.5);
   -o-backdrop-filter: blur(10px);
   -moz-backdrop-filter: blur(10px);
@@ -84,17 +82,15 @@ nav {
   ul {
     position: absolute;
     li {
-      @apply font-black text-5xl text-center;
+      @apply font-black text-black text-5xl text-center;
+      &::before {
+        position: absolute;
+      }
       a {
-        @apply text-gray-100 text-3xl  sm:text-4xl xl:text-5xl;
-
-        background-color: transparent;
-        -webkit-text-stroke-width: 1.5px;
-        -webkit-text-stroke-color: black;
-        /* -webkit-text-stroke: 1.5px black; */
+        @apply text-3xl sm:text-4xl xl:text-5xl;
       }
       & + li {
-        @apply mt-4;
+        @apply border-t-2 mt-3 pt-3 border-gray-500;
       }
     }
   }
@@ -115,10 +111,7 @@ header {
 }
 .menu-leave-to,
 .menu-enter {
-  clip-path: polygon(100% 0, 100% 0, 100% 100%);
+  transform: translateX(100%);
+  /* clip-path: polygon(100% 0, 100% 0, 100% 100%); */
 }
-/* .menu-enter-to,
-.menu-enter {
-  transform: translateX(0);
-} */
 </style>
