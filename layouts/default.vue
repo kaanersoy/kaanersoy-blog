@@ -69,8 +69,7 @@ html {
   box-sizing: border-box;
 }
 nav {
-  @apply fixed flex items-center justify-center top-0 right-0 w-full xl:w-80 min-h-screen z-20;
-  background: rgba(230, 230, 230, 0.5);
+  @apply fixed flex items-center justify-center top-0 right-0 w-full xl:w-80 min-h-screen z-20 bg-gray-200 bg-opacity-30;
   -o-backdrop-filter: blur(10px);
   -moz-backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
