@@ -35,8 +35,11 @@ export default {
   }
   .body {
     @apply xl:flex;
+    & > * {
+      @apply xl:w-1/2; 
+    }
     .content {
-      @apply xl:w-1/2 xl:mr-7;
+      @apply xl:mr-7;
       img {
         @apply w-full my-2;
       }
