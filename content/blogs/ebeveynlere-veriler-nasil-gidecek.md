@@ -7,6 +7,8 @@ thumbnail: https://miro.medium.com/max/700/1*J46QBuU2F7Yu5sBlV_qaBg.jpeg
 
 Vue.js child-to-parent veri akışı ve $emit kullanımı
 
+![](https://miro.medium.com/max/700/1*J46QBuU2F7Yu5sBlV_qaBg.jpeg)
+
 Merhaba herkese 👋,
 
 Bugün çoğu zaman küçük, bazen de büyük bir dert olan Vue.js component’lerinde child-to-parent ilişkisi hakkında bildiklerimden bahsetmek istiyorum.
