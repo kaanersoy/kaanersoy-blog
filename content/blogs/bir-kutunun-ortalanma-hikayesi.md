@@ -1,6 +1,7 @@
 ---
 title: bir kutunun ortalanma hikayesi
 description: Bugün size CSS’e ilk başladığım zamanlarda karşıma çıkan ve bana Google’da ***“CSS’de div nasıl ortalanır?”*** diye aramalar yaptıran bir problemi anlatmak ve farklı senaryolarda nasıl çözümler getirdiğimden bahsetmek istiyorum.
+thumbnail: https://cdn-images-1.medium.com/max/2000/1*TyhgSUIA2j1g9stsObsjMQ.png
 ---
 # bir kutunun ortalanma hikayesi
 

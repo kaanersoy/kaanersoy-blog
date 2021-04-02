@@ -1,6 +1,7 @@
 ---
 title: ebeveynlere veriler nasıl gidecek?
 description: Vue.js child-to-parent veri akışı ve $emit kullanımı
+thumbnail: https://miro.medium.com/max/700/1*J46QBuU2F7Yu5sBlV_qaBg.jpeg
 ---
 # ebeveynlere veriler nasıl gidecek?
 

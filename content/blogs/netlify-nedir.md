@@ -1,6 +1,7 @@
 ---
 title: Netlify nedir? Nasıl kullanılır?
 description: Size yakın süre önce karşılaştığım ve mükemmel ayrıcalıklar kazandıracak bir servisi tanıtmak istiyorum.
+thumbnail: https://cdn-images-1.medium.com/max/2400/1*4mPY0U4uKKuCZefAn8MN2A.png
 ---
 # Netlify nedir? Nasıl kullanılır?
 
