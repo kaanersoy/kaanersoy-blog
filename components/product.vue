@@ -27,7 +27,7 @@ export default {
   & + .project-box {
     @apply border-t-2 border-gray-200 pt-6;
   }
-  @apply my-6;
+  @apply my-3 xl:my-6;
   .head {
     & > h5 {
       @apply text-xl font-bold mb-4;
@@ -36,7 +36,7 @@ export default {
   .body {
     @apply xl:flex;
     & > * {
-      @apply xl:w-1/2; 
+      @apply xl:w-1/2;
     }
     .content {
       @apply xl:mr-7;
@@ -46,10 +46,10 @@ export default {
     }
     .description {
       h6 {
-        @apply border-b-2 mb-2 pb-2;
+        @apply xl:border-b-2 text-gray-500 mb-2 xl:pb-2;
       }
       p {
-        @apply text-lg;
+        @apply text-lg font-light;
       }
     }
   }

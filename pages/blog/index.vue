@@ -51,7 +51,7 @@ main.blog {
         @apply border-gray-200 border-t-2 pt-5 mt-5 xl:pt-2 xl:mt-2;
       }
       .thumbnail {
-        @apply w-full mb-3 xl:mb-0 xl:w-1/3;
+        @apply w-full mb-6 xl:mb-0 xl:w-1/3;
         img {
           @apply w-full h-auto rounded;
         }
