@@ -9,7 +9,13 @@
         </ul>
       </nav>
     </transition>
-    <header>
+    <header :class="isDown ? 'menu-sticky' : ''">
+      <div class="profile">
+        <div class="img">
+          <img src="../assets/img/me.jpg" alt="Kaan Ersoy Profile" />
+        </div>
+        <h2>Kaan Ersoy</h2>
+      </div>
       <div class="menu">
         <hamburger :is-open="isMenuOpened" @menuToggle="toggleMenu" />
       </div>
@@ -40,7 +46,14 @@ export default {
     return {
       menus,
       isMenuOpened: false,
+      isDown: false
     };
+  },
+  mounted(){
+    window.addEventListener('scroll',() => {
+      if(window.scrollY > 0) return this.isDown = true;
+      this.isDown = false;
+    })
   },
   methods: {
     toggleMenu() {
@@ -52,7 +65,7 @@ export default {
 
 <style lang="postcss">
 .container {
-  @apply mx-auto px-5 xl:max-w-5xl pt-12;
+  @apply mx-auto px-5 xl:max-w-5xl pt-20 xl:pt-24;
 }
 h1 {
   @apply text-4xl font-bold my-4;
@@ -70,10 +83,10 @@ html {
 }
 nav {
   @apply fixed flex items-center justify-center top-0 right-0 w-full xl:w-80 min-h-screen z-20 bg-gray-200 bg-opacity-30;
-  -o-backdrop-filter: blur(10px);
-  -moz-backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -o-backdrop-filter: blur(8px);
+  -moz-backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   -webkit-transition: 500ms ease;
   -o-transition: 500ms ease;
   -moz-transition: 500ms ease;
@@ -95,9 +108,37 @@ nav {
   }
 }
 header {
-  @apply py-4 px-6 fixed z-30 -inset-x-0 w-full;
-  .hamburger {
-    @apply block ml-auto;
+  @apply flex items-center justify-between py-4 px-6 absolute z-30 -inset-x-0 w-full;
+  transition: background-color 300ms ease;
+  &.menu-sticky {
+    @apply fixed bg-gray-200 bg-opacity-40;
+    animation: menuDown 250ms ease-in-out;
+  }
+  .profile {
+    @apply flex items-center;
+    .img {
+      @apply w-11;
+      img {
+        @apply w-full rounded-full;
+      }
+    }
+    h2 {
+      @apply font-black ml-2;
+    }
+  }
+  .menu {
+    .hamburger {
+      @apply block ml-auto;
+    }
+  }
+}
+
+@keyframes menuDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
   }
 }
 
