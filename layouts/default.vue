@@ -115,7 +115,7 @@ nav {
         }
       }
       & + li {
-        @apply border-t-2 mt-3 pt-3 border-gray-500;
+        @apply border-t-2 mt-2 xl:mt-3 xl:pt-3 border-gray-500;
       }
     }
   }
