@@ -33,6 +33,7 @@ import CustomFooter from '@/components/footer'
 
 const menus = [
   { to: '/', text: 'Home' },
+  { to: '/about', text: 'About' },
   { to: '/blog', text: 'Blogs' },
 ];
 
