@@ -1,27 +1,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
 
-/* .page-enter-active,
 .page-leave-active {
-  transition: 500ms ease;
+  opacity: 1;
 }
-.page-enter {
-  transform: translate(0, 100vh);
-  animation: fadeInUp ease 500ms;
-}
-.page-leave-to {
+.page-enter-active{
   opacity: 0;
-  transform: translate(0, -100vh);
 }
 
-@keyframes fadeInUp{
+.page-leave-to {
+  animation: pageOut cubic-bezier(0.455, 0.03, 0.515, 0.955) 600ms;
+}
+
+.page-enter-to {
+  animation: pageIn cubic-bezier(0.455, 0.03, 0.515, 0.955) 600ms;
+}
+
+@keyframes pageOut {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+}
+
+@keyframes pageIn {
   0%{
     opacity: 0;
-  }
-  50%{
-    opacity: 0;
+    transform: translateY(200px);
   }
   100%{
     opacity: 1;
+    transform: translateY(0px);
   }
-} */
+}
