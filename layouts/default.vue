@@ -113,6 +113,11 @@ header {
   &.menu-sticky {
     @apply fixed bg-gray-200 bg-opacity-40;
     animation: menuDown 250ms ease-in-out;
+    -o-backdrop-filter: blur(4px);
+    -moz-backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.3);
   }
   .profile {
     @apply flex items-center;
