@@ -30,12 +30,21 @@ export default {
 <style lang="postcss">
 main.blog {
   h1 {
-    @apply text-center m-12 relative;
+    @apply text-center m-8 relative py-6;
+    &::after {
+      content: "";
+      @apply absolute left-1/2 bottom-0 h-1 w-full bg-gray-600 transform -translate-x-1/2;
+    }
+    &::before {
+      content: "";
+      @apply absolute left-1/2 h-4 w-4 bg-gray-600 transform -translate-x-1/2 rotate-45;
+      bottom: -6px;
+    }
   }
   ul {
     li {
-      @apply xl:flex xl:items-center;
-      min-height: 200px;
+      @apply flex flex-col justify-center xl:flex-row xl:justify-start xl:items-center;
+      min-height: 250px;
       .thumbnail {
         @apply w-full mb-3 xl:mb-0 xl:w-1/3;
         img {
