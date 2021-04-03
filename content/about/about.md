@@ -15,7 +15,7 @@ Also i am a open sourcer and creating open source projects.
 You can check them here too: [Github - Kaan Ersoy](https://github.com/kaanersoy)
  
 
-Projects
+### My Projects:
 
 - [SLICER | URL Shortener](https://www.slicer.fun/)
   ![SLICER | URL Shortener](https://user-images.githubusercontent.com/57914492/113486937-d6e51800-94bd-11eb-980d-f11e93b8bb11.PNG)
