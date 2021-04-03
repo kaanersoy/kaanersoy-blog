@@ -47,6 +47,9 @@ main.blog {
     li {
       @apply flex flex-col justify-center xl:flex-row xl:justify-start xl:items-center;
       min-height: 250px;
+      & + li {
+        @apply border-gray-200 border-t-2 pt-5 mt-5 xl:pt-2 xl:mt-2;
+      }
       .thumbnail {
         @apply w-full mb-3 xl:mb-0 xl:w-1/3;
         img {
@@ -61,9 +64,6 @@ main.blog {
         p {
           @apply font-light text-sm text-gray-500;
         }
-      }
-      & + li {
-        @apply border-gray-200 border-t-2 pt-2 mt-2;
       }
     }
   }
