@@ -38,5 +38,8 @@
     li {
     }
   }
+  em {
+    @apply text-center block;
+  }
 }
 </style>
