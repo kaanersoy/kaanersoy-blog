@@ -1,9 +1,7 @@
 <template>
   <div class="blog-in">
     <article>
-      <client-only>
-        <nuxt-content :document="blog" />
-      </client-only>
+      <nuxt-content :document="blog" />
     </article>
   </div>
 </template>
