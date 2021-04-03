@@ -15,5 +15,8 @@ module.exports = {
     'vue',
   ],
   rules: {
+    'quotes': ['error', 'single'],
+    'semi': ['error', 'never'],
+    'max-len': ['fix', { 'code': 130 }]
   },
-};
+}
