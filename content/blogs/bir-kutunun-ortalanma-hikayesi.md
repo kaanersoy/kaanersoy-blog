@@ -1,13 +1,13 @@
 ---
 title: bir kutunun ortalanma hikayesi
-description: Bugün size CSS’e ilk başladığım zamanlarda karşıma çıkan ve bana Google’da ***“CSS’de div nasıl ortalanır?”*** diye aramalar yaptıran bir problemi anlatmak ve farklı senaryolarda nasıl çözümler getirdiğimden bahsetmek istiyorum.
+description: Bugün size CSS’e ilk başladığım zamanlarda karşıma çıkan ve bana Google’da **“CSS’de div nasıl ortalanır?”** diye aramalar yaptıran bir problemi anlatmak ve farklı senaryolarda nasıl çözümler getirdiğimden bahsetmek istiyorum.
 thumbnail: https://cdn-images-1.medium.com/max/2000/1*TyhgSUIA2j1g9stsObsjMQ.png
 ---
 # bir kutunun ortalanma hikayesi
 
 Merhaba,
 
-Bugün size CSS’e ilk başladığım zamanlarda karşıma çıkan ve bana Google’da ***“CSS’de div nasıl ortalanır?”*** diye aramalar yaptıran bir problemi anlatmak ve farklı senaryolarda nasıl çözümler getirdiğimden bahsetmek istiyorum.
+Bugün size CSS’e ilk başladığım zamanlarda karşıma çıkan ve bana Google’da **“CSS’de div nasıl ortalanır?”** diye aramalar yaptıran bir problemi anlatmak ve farklı senaryolarda nasıl çözümler getirdiğimden bahsetmek istiyorum.
 
 Hakkında onlarca makale yazılan bu sorunun çözümü çoğu zaman çok basit fakat çok fazla seçenek olduğu için bir o kadar da kafa karıştırıcı olabiliyor.
 
@@ -37,7 +37,7 @@ Gördüğünüz gibi örnek görselde turuncu gözüken yer bizim margin değeri
 
 Bu soruna çözümü biz de `margin: 0 auto` ile getireceğiz.
 
-![](https://cdn-images-1.medium.com/max/2000/1*cIWZCjmRKj4Tap_Z3lhesA.png)
+![*İşte tam olarak böyle ortalanıyorr*](https://cdn-images-1.medium.com/max/2000/1*cIWZCjmRKj4Tap_Z3lhesA.png)*İşte tam olarak böyle ortalanıyorr*
 
 Gördüğümüz gibi sağ ve sol değerleri margin: 0 auto ile verdiğimiz taktirde elementimiz kusursuz bir şekilde ekranımızın ortasında beliriverdi.
 
@@ -45,13 +45,13 @@ Aslında bu senaryo günümüzde çoğu kişinin kullandığı Bootstrap CSS kü
 
 Peki ya burada bir değil de birden fazla mavi kutumuz yan yana olsaydı? O zaman ne yapacaktık? Hemen bu sorunumuzu da çözelim:
 
-![](https://cdn-images-1.medium.com/max/2000/1*aUpDYZa0Zu-Xd0bUcNwVNA.png)
+![](https://cdn-images-1.medium.com/max/2000/1*aUpDYZa0Zu-Xd0bUcNwVNA.png)*'Peki flexleri ne yapıcaz?' dediğinizi duyar gibiyim*
 
 Şekilde gördüğümüz gibi display: flex; bir adet kapsayıcımız ve yan yana birden fazla elementimiz var. Bunları ortalamak için ne yapacaktık?
 
 Burada ise CSS’in flexbox özellikleri bizi kucaklıyor ve işin içinden kolayca sıyrılmamızı sağlıyor.
 
-![](https://cdn-images-1.medium.com/max/2000/1*AZJJwYnm2-9N3UJYer9_pw.png)
+![](https://cdn-images-1.medium.com/max/2000/1*AZJJwYnm2-9N3UJYer9_pw.png)*Çok zor olmadı değil mi :)*
 
 Burada kullandığımız justify-content: center; özelliği kapsayıcımızın genişliğinin tam ortasında bizim kutularımızı tutuyor ve bizi büyük bir dertten daha kurtarıyor.
 
@@ -111,7 +111,7 @@ Geri kalan kuralları daha önceki örneklerde dikey ve yatayda nasıl çalışt
 
 Burası biraz karmaşık gelebilir fakat biraz açıklamaya başlayınca kafa açıcı bir yöntem olduğunu beraber göreceğiz.
 
-CSS Flexbox yok iken(daha doğrusu major tarayıcılar tarafından desteklenmiyor iken) web geliştirici abilerimizin kaçtığı bu tür ***hacky ***yöntemler çoğu yerde karşımıza çıkıyor. Bunlar çoğu zaman zihin açıcı yöntemler oluyor🤯.
+CSS Flexbox yok iken(daha doğrusu major tarayıcılar tarafından desteklenmiyor iken) web geliştirici abilerimizin kaçtığı bu tür **hacky** yöntemler çoğu yerde karşımıza çıkıyor. Bunlar çoğu zaman zihin açıcı yöntemler oluyor🤯.
 
 Burada yaptığımız işlem öncelikle kapsayıcımıza position: relative; özelliği ekleyerek mavi kutumuzu kapsayıcımıza bağıl hale getirmek.
 Sonrasında ise yine height: 100vh; kullanarak kapsayıcımıza ekran yüksekliği kadar yükseklik kazandırdık.
