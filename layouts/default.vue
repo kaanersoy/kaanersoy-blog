@@ -17,14 +17,13 @@
     <div class="container">
       <Nuxt />
     </div>
-    <!-- <footer>
-      <h3>footer</h3>
-    </footer> -->
+    <custom-footer></custom-footer>
   </div>
 </template>
 
 <script>
-import hamburger from '@/components/hamburger';
+import hamburger from '@/components/hamburger'
+import CustomFooter from '@/components/footer'
 
 const menus = [
   { to: '/', text: 'Home' },
@@ -35,6 +34,7 @@ export default {
   name: 'DefaultLayout',
   components: {
     hamburger,
+    CustomFooter
   },
   data() {
     return {
@@ -58,8 +58,8 @@ h1 {
   @apply text-4xl font-bold my-4;
 }
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
