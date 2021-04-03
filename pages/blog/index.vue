@@ -9,9 +9,11 @@
           </NuxtLink>
         </div>
         <div class="head">
-          <NuxtLink :to="`/blog/${b.slug}`">{{ b.title }}</NuxtLink>
+          <NuxtLink :to="`/blog/${b.slug}`"
+            ><h3>{{ b.title }}</h3></NuxtLink
+          >
+          <p>{{ b.description }}</p>
         </div>
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 7h-14v1h14v-1zm0 2h-14v1h14v-1zm0 2h-14v1h14v-1zm0 2h-14v1h14v-1zm-6 2h-8v1h8v-1zm11-10c0-1.104-.896-2-2-2h-20c-1.104 0-2 .896-2 2v14c0 1.104.896 2 2 2h20c1.104 0 2-.896 2-2v-14zm-3 14h-18v-14h18v14zm1.5-6.5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5z"/></svg> -->
       </li>
     </ul>
   </main>
@@ -19,12 +21,12 @@
 
 <script>
 export default {
-  name: "BlogPage",
+  name: 'BlogPage',
   async asyncData({ $content }) {
-    const blogs = await $content("blogs").fetch();
-    return { blogs };
+    const blogs = await $content('blogs').fetch()
+    return { blogs }
   },
-};
+}
 </script>
 
 <style lang="postcss">
@@ -48,11 +50,17 @@ main.blog {
       .thumbnail {
         @apply w-full mb-3 xl:mb-0 xl:w-1/3;
         img {
-          @apply w-full h-auto;
+          @apply w-full h-auto rounded;
         }
       }
       .head {
-        @apply text-2xl text-gray-500 xl:ml-10 font-bold;
+        @apply xl:ml-10 xl:w-2/3;
+        h3 {
+          @apply text-2xl text-gray-600 font-bold mb-4;
+        }
+        p {
+          @apply font-light text-sm text-gray-500;
+        }
       }
       & + li {
         @apply border-gray-200 border-t-2 pt-2 mt-2;
