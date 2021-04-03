@@ -3,8 +3,8 @@
     <div class="wrapper">
       <p>
         <a href="https://github.com/kaanersoy" target="_blank">Kaan Ersoy</a>
-        | Personal Website
       </p>
+      <p>Personal Website</p>
       <div class="icons">
         <a href="#">
           <img src="../assets/icons/github.svg" alt="Kaan Ersoy | Github" />
@@ -33,16 +33,21 @@ export default {
 footer {
   @apply flex flex-col items-center m-3 py-4 border-t-2;
   .wrapper {
-    & > * + * {
-      @apply mt-2;
-    }
     p {
-      @apply font-bold text-gray-500;
+      @apply font-bold text-gray-500 text-center;
+      & + p {
+        @apply border-t-2 border-gray-200 pt-1 font-light mt-1;
+      }
     }
     .icons {
-      @apply flex justify-center gap-3;
+      @apply flex justify-center mt-3;
       img {
         @apply w-9;
+      }
+      a {
+        & + a {
+          @apply ml-2;
+        }
       }
     }
   }
