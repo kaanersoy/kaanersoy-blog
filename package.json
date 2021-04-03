@@ -18,11 +18,8 @@
     "sass": "^1.32.8"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.13.14",
     "@nuxtjs/tailwindcss": "^4.0.1",
     "eslint": "^7.23.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-vue": "^7.8.0",
     "postcss": "^7.0.32"
   },

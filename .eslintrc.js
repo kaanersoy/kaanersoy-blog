@@ -6,12 +6,10 @@ module.exports = {
   },
   extends: [
     'plugin:vue/essential',
-    'airbnb-base',
   ],
   parserOptions: {
     ecmaVersion: 12,
     sourceType: 'module',
-    parser: '@babel/eslint-parser',
   },
   plugins: [
     'vue',
