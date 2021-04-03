@@ -96,11 +96,23 @@ nav {
     position: absolute;
     li {
       @apply font-black text-black text-5xl text-center;
+      &:nth-child(1) {
+        animation: fadeInLeft 350ms ease 400ms;
+      }
+      &:nth-child(2) {
+        animation: fadeInLeft 350ms ease 500ms;
+      }
+      &:nth-child(3) {
+        animation: fadeInLeft 350ms ease 600ms;
+      }
       &::before {
         position: absolute;
       }
       a {
         @apply text-3xl sm:text-4xl xl:text-5xl;
+        &.nuxt-link-exact-active {
+          @apply text-purple-800;
+        }
       }
       & + li {
         @apply border-t-2 mt-3 pt-3 border-gray-500;
@@ -150,11 +162,32 @@ header {
 
 .menu-enter-active,
 .menu-leave-active {
-  -webkit-transition: 500ms ease;
-  -o-transition: 500ms ease;
-  -moz-transition: 500ms ease;
-  transition: 500ms ease;
+  -webkit-transition: 650ms ease;
+  -o-transition: 650ms ease;
+  -moz-transition: 650ms ease;
+  transition: 650ms ease;
 }
+
+.menu-enter-active {
+  li {
+    opacity: 0;
+  }
+}
+
+.menu-enter-to {
+}
+
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .menu-leave-to,
 .menu-enter {
   transform: translateX(100%);
