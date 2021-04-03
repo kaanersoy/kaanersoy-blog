@@ -5,11 +5,14 @@
     </div>
     <div class="head">
       <h1>Kaan Ersoy</h1>
+      <h4>Hi 👋</h4>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
-        excepturi aliquid nemo, animi eligendi odio quod. Molestias deleniti eum
-        doloribus eos cupiditate? Cupiditate dolore facere omnis cum, dolores
-        voluptatibus consequatur!
+        I am a web developer about two years, and very interested in Javascript.
+        Also working at
+        <a href="https://vivoo.io">Vivoo</a> as a <b>Front-end Developer</b>. I
+        am developing <b>Vue.js, React.js and Nuxt</b> Apps for a long time.
+        Writing blogs about <b>Javascript</b> and <b>Web Developement</b> and
+        very interested in <b>open-source projects</b>.
       </p>
       <div class="icons">
         <a href="">
@@ -55,8 +58,8 @@ export default {
 </script>
 
 <style lang="postcss">
-body{
-  font-family: 'Inter', sans-serif;
+body {
+  font-family: "Inter", sans-serif;
 }
 main.main-page {
   hr {
@@ -71,8 +74,15 @@ main.main-page {
     h1 {
       @apply text-center text-4xl;
     }
+    h4 {
+      @apply text-2xl text-center my-4;
+    }
+    .dot {
+      @apply text-center my-1;
+    }
     p {
-      @apply text-lg;
+      @apply text-lg my-1;
+      letter-spacing: 0.5px;
     }
     .icons {
       @apply flex justify-center my-6 space-x-4;
@@ -83,13 +93,13 @@ main.main-page {
   }
   .body {
     .project {
-      .title{
+      .title {
         @apply text-center;
         h4 {
           @apply font-bold  relative text-3xl my-4 inline-block pb-4 border-b-2 border-gray-700 text-gray-700;
-          &::after{
-            content:'';
-            @apply absolute left-1/2 -bottom-2 w-3 h-3 bg-gray-700 rounded-full; 
+          &::after {
+            content: "";
+            @apply absolute left-1/2 -bottom-2 w-3 h-3 bg-gray-700 rounded-full;
           }
         }
       }
