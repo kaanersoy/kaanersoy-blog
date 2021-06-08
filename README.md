@@ -5,7 +5,6 @@ Was a test for SSR and Vue Transition API.
 
 ## 💻 Techs
 
-  - Vuex
   - Nuxt
   - Nuxt Content API
   - Vue/Nuxt Transition API
