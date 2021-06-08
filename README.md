@@ -8,7 +8,7 @@ Was a test for SSR and Vue Transition API.
   - Vuex
   - Nuxt
   - Nuxt Content API
-  - Next Transition API
+  - Vue/Nuxt Transition API
 
 ## 📦 Installation
 
